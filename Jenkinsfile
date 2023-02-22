@@ -8,7 +8,7 @@ node {
     }
 
     stage('Build') {
-        bat 'ng build --prod'
+        bat 'ng build'
     }
 
     stage('Test') {
