@@ -8,11 +8,11 @@ node {
     }
 
     stage('Build') {
-        bat 'ng build'
+        bat 'npm build'
     }
 
     stage('Test') {
-        bat 'ng test --watch=false --browsers=ChromeHeadlessCI'
+        bat 'npm test --watch=false --browsers=ChromeHeadlessCI'
     }
 
     stage('Deploy') {
