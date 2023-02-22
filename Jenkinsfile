@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'xcopy /s /e /y dist\\* C:\\inetpub\\wwwroot\\'
+                echo 'xcopy /s /e /y dist\\* C:\\inetpub\\wwwroot\\'
             }
         }
     }
