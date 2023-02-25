@@ -8,7 +8,7 @@ node {
     }
 
     stage('Build') {
-        bat 'npm build'
+        bat 'npm run build'
     }
 
     stage('Test') {
