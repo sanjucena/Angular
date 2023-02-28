@@ -39,3 +39,4 @@ stage('Push Docker Image') {
             dockerImage.push("latest")
         }
 }
+}
