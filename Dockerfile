@@ -1,2 +1,8 @@
+FROM node:latest AS node
+WORKDIR /app
+COPY . .
+RUN npm i
+RUN npm run build --prod
+
 FROM nginx:alpine
-COPY /dist/FrontEnd_Angular_Test /usr/share/nginx/html
+COPY --from=node /app/dist/front-end-angular-test /usr/share/nginx/html
