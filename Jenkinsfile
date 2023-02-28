@@ -5,7 +5,7 @@ node {
         registryCredential = 'docker-hub-credentials'
         dockerImage = ''
     }
-
+agent any
     stage('Checkout') {
         git branch: 'master', url: 'https://github.com/sanjucena/Angular.git'
     }
