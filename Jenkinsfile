@@ -1,4 +1,4 @@
-node {
+pipeline {
 
     environment {
         registry = "sanju09/repo45"
