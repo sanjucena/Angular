@@ -20,7 +20,7 @@ pipeline {
         }
       }
     }
-    stage('Push Image') {
+    stage('Push Image to Hub') {
       steps{
         script {
           /* Finally, we'll push the image with two tags:
