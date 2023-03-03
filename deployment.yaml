@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angular
-        image: latest # Image that will be used to containers in the cluster
+        image: sanju09/repo45 # Image that will be used to containers in the cluster
         ports:
         - containerPort: 80 # The port that the container is running on in the cluster
 ---
@@ -30,5 +30,5 @@ spec:
   - protocol: TCP
     port: 80   # The port that the service is running on in the cluster
     targetPort: 80   # The port exposed by the service
-    nodePort: 30003
+    nodePort: 30007
   type: NodePort     # type of the service.

@@ -1,5 +1,3 @@
-
-
 pipeline {
   environment {
     registry = "sanju09/repo45"
@@ -29,15 +27,18 @@ pipeline {
                    * Pushing multiple tags is cheap, as all the layers are reused. */
           docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
               dockerImage.push("${env.BUILD_NUMBER}")
-              dockerImage.push("latest")
+              dockerImage.push("sanju09/repo45")
           }
         }
       }
     }
-    // stage('Deploy to K8S'){
-    //     steps{
     //         sh 'kubectl apply -f deployment.yml'
-    //    }
-    // }
+    stage('Deploy to K8S'){
+        steps{
+        script{
+            kubernetesDeploy (configs: 'deployment.yaml', kubeconfigId: 'k9sconfigpwd')
+        }
+        }
+    }
   }
 }
