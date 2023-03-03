@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest AS node
 WORKDIR /app
 COPY . .
 RUN npm i
