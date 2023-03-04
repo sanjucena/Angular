@@ -1,7 +1,7 @@
 apiVersion: apps/v1 # Kubernetes API version
 kind: Deployment  # Kubernetes resource kind we are creating
 metadata:
-  name: angular-deployment3
+  name: angulardeployment4
 spec:
   selector:
     matchLabels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: angular
-        image: sanju09/repo45 # Image that will be used to containers in the cluster
+        image: sanju09/repo45:latest # Image that will be used to containers in the cluster
         ports:
         - containerPort: 80 # The port that the container is running on in the cluster
 ---
@@ -23,7 +23,7 @@ spec:
 apiVersion: v1 # Kubernetes API version
 kind: Service # Kubernetes resource kind we are creating
 metadata: # Metadata of the resource kind we are creating
-  name: angular-service3
+  name: angularservice4
 spec:
   selector:
     app: angular
@@ -31,4 +31,5 @@ spec:
     - protocol: "TCP"
       port: 8080 # The port that the service is running on in the cluster
       targetPort: 8080 # The port exposed by the service
+      nodePort: 27000
   type: NodePort # type of the service.
