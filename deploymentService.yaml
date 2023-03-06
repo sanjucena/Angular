@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
       - name: angular
-        image: sanju09/repo45:latest # Image that will be used to containers in the cluster
+        image: sanju09/repo45 # Image that will be used to containers in the cluster
+        imagPullPoilicy: IfNotPresent
         ports:
         - containerPort: 80 # The port that the container is running on in the cluster
 ---
