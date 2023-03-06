@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "protractor protractor.conf.js"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "protractor": "^7.0.0",
     "typescript": "~4.9.4"
   }
 }
