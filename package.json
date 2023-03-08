@@ -9,8 +9,10 @@
     "test": "ng test --watch=false",
     "test-karma": "ng test --watch=false --browsers=ChromeHeadless --code-coverage",
     "lint": "ng lint",
-    "e2e": "protractor protractor.conf.js",
-    "sonar": "sonar-scanner"
+    "e2e": "echo yet to decide on protractor",
+    "sonar": "sonar-scanner",
+    "postbuild":"xcopy /s \".\/dist\" \"server\" \/Y"
+
   },
   "private": true,
   "dependencies": {
