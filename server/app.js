@@ -14,7 +14,7 @@ app.get('/name', (req, res) => {
 })
 
 app.get('/nodeDeveloper', (req, res) => {
-    res.send('<h1> want 2 become node developer</h1>');
+    res.send('<h1> want 2 become node senior developer</h1>');
 })
 
 app.use(express.static('front-end-angular-test'));
