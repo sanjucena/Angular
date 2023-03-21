@@ -14,6 +14,9 @@
     "postbuild":"xcopy /s \".\/dist\" \"server\" \/Y"
 
   },
+  "publishConfig": {
+    "registry": "http://819e-49-204-120-5.in.ngrok.io/repository/npm-private/"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.1.0",
