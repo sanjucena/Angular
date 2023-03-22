@@ -1,6 +1,6 @@
 {
   "name": "front-end-angular-test",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,7 +15,7 @@
 
   },
   "publishConfig": {
-    "registry": "http://654c-49-204-120-5.in.ngrok.io/repository/npm-private/"
+    "registry": "http://a136-49-204-120-5.in.ngrok.io/repository/npm-private/"
   },
   "private": true,
   "dependencies": {
