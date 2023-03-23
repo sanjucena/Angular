@@ -15,7 +15,7 @@
 
   },
   "publishConfig": {
-    "registry": "http://a314-49-204-120-5.in.ngrok.io/repository/npm-private/"
+    "registry": "http://04d1-49-204-120-5.in.ngrok.io/repository/npm-privateRepo/"
   },
   "private": true,
   "dependencies": {
