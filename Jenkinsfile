@@ -130,7 +130,7 @@ pipeline {
                 ],
                 credentialsId: 'NexusNpmUser', 
                 groupId: 'com.group', 
-                nexusUrl: '192.168.0.10',
+                nexusUrl: '2ced-49-204-120-197.in.ngrok.io',
                 nexusVersion: 'MyNexus', 
                 protocol: 'http', 
                 repository: 'npm-privateRepo', 
